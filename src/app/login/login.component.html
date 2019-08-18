@@ -1,0 +1,33 @@
+<html>
+        <head>
+                <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        </head>
+        <!-- <router-outlet>  -->
+                 <body>
+
+                <div class="div1 row w-100 h-100" >
+                        <div class="w-25 mx-auto my-auto">
+                                <p class="headings">login</p>
+<p> Username</p>
+<input class="form-control" type="text" ngModel #username placeholder="Username"required>
+<!-- <div class="invalid-feedback">username required!
+                
+              </div> -->
+<br>
+<p> Password</p>
+<input class="form-control" type="password" ngModel #password name="pass" placeholder="Password" required>
+<!-- <div class="invalid-feedback">password required
+                
+              </div> -->
+<br>
+<br>
+<input class="btn" type="button" (click)="submit(username.value,password.value)" value="Submit">
+
+        <!-- </router-outlet>  -->
+</div>
+</div>
+</body>
+
+</html>
+
