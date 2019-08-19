@@ -18,15 +18,17 @@ export class LoginComponent {
   pass:string='password'
   txt1:string='akshi'
   data: any;
+  submitted=false;
  
   constructor(private router: Router,private _exampleService:MyFirstServiceClass) { }
    
 
   submit(uname,pwd)
   {
+    this.submitted=true;
     if(uname==''||pwd=='')
     {
-      alert('username and password required');
+      // alert('username and password required');
     }
     if(pwd=="p"){
    this._exampleService.username = uname;
